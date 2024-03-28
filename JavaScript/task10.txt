@@ -1,1 +1,133 @@
-idhar milenge saare
+Answer 1 : 
+
+	1 . Object Literal
+
+	const obj = {
+	name : "Jos",
+	age : "28",
+	greet : function (){
+				console.log(`Hello I am ${this.name}`)}
+	}
+
+	2 . Constructor function 
+	
+		function Person(name,age){
+		this.name = name;
+		this.age = age;
+		this.greet = function(){
+						console.log(`Hello I am ${this.name}`)}
+		}
+		
+		const Jos = new Person("Jos",28) 
+		
+	3. Object.create()
+	
+	const personPrototype = {
+	greet : function (){
+				console.log(`Hello I am ${this.name}`)}
+	}
+	const person = Object.create(personPrototype)
+	person.name = "Jos"
+	person.age = 28
+
+
+Answer 2 : 
+	
+	Object Prototype Methods : these are the methods that are available on all objects in JS through their prototype chain. These methods are inherited by all objects from the "Object-prototype" object, which serves as the prototype for all JS objects 
+
+Answer 3 : 
+
+	Object chaining or method chaining is a technique in JS where multiple methods are called sequentially on the same object, with each method returning the object itself. This is allows to write a concise and expressive code by enabling to perform a series of operations on an object in a single statement.
+	
+	
+	
+	const calculator = {
+		value : 0 ,
+		add : function(num){
+					this.value += num;
+					return this;
+					}
+		substract : function(num){
+					this.value -= num;
+					return this;
+					}
+		multiply : function(num){
+					this.value *= num
+					return this
+					}
+		divide : function(num){
+					this.value /= num
+					return this
+					}
+		getValue : function(){
+					return this.value
+					}
+	}
+	
+	const result = calculator.add(5).substract(3).multiply(7).divide(2).getValue()
+	
+	console.log(result)
+	
+	
+Answer 4 : 
+
+	The main difference between the fat arrow functions and norrmal ones lies in the behaviour of the this keyword
+	
+	Arrow functions do not have their own "this" context, instead they inherit "this" from the surrounding lexical scope 
+	Normal functions on the other hand have thier own "this" context, which is determined by how they are invoked
+
+Answer 5 : 
+
+	function normal(){
+		console.log(this)
+		}
+	
+	const fat = ()=>{
+		console.log(this)
+		}
+		
+	const obj = {
+		normal : normal,
+		fat : fat
+		}
+		
+	obj.normal() -----> returns the obj which is invoking normal
+	
+	obj.fat() -----> returns empty obj
+
+
+Answer 6 : 
+
+	
+	Axios is widely used due to its simplicity, flexibility, and robust feature set compared to other HTTP client libraries like fetch, http, and got:
+	
+	Simple API
+	Promise-based
+	Browser and Node.js Support
+	Automatic JSON data handling
+	Error Handling
+	
+
+Answer 7 :
+
+	A function bound together along with its lexical scope is known as closure
+
+	function add(x){
+		return function(x,y){
+					console.log(x + y)
+					}
+		}
+	const add2 = add(2) ----> add2 is a new function which can be call anytime and it has formed a closure with x = 2 
+	hence calling it anytime it will add to an argument
+
+
+Answer 8 : 
+
+
+	
+	In Js or any other programming language the arithmetic operations on floating point numbers take place at binary level.
+	in this case 0.1 converted to binary is some infinite recuring sequence and 0.2 is also some infinite recuring sequence. The recuring sequence is fairly approximated with 15-17 decimal places and adding them gives some extra part above 0.3
+	
+Answer 9 : 
+	
+	This will be false as 0.2 + 0.3 is not exactly equal to 0.5
