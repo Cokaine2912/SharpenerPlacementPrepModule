@@ -1,0 +1,33 @@
+TASK 13 
+
+
+Answer 1 : 
+	
+	Sequelize is a Object Relational Mapping library which is promise based and used to manage relational databases like MySQL, PostgreeeSQL, SQLite and MSSQL. It provides abstraction over database queries and operations allowing developers to work with database using JavaScript objects and methods
+	
+	Uses :
+		
+		Simplification of database interaction by allowing developers to use JavaScript objects instead to the raw SQL queries
+		
+		It supports defining models, relationships between models and performing CRUD operations on the database
+		
+		supports multiple database dialects which make it versatile for various project requirements
+		
+		It offers features like data validation, query building, migrations and transactions which streamline the development processs and help to maintain the DB integrity
+		
+		It also prevents common security vulnerabilities such as SQL injection by parameterizing queries
+
+Answer 2 : 
+
+	This project has a predifined schema and follows a clear structure also there involve join operations on multiple tables relational database like MySQL is a good fit 
+
+Answer 3 :
+
+	A view in SQL is a DB object that is created using the SELECT query using complex logic, so views are said to be a logical representation of the physical data i.e. views behave like a physical table and users can use them as DB object in any part of SQL queries
+	
+Answer 4 : 
+
+	i. import Sequelize
+	ii. Define models by sepcifying coloumns details 
+	iii. Establish connection by specifying dialect, host , username and password
+	iv Sync the DB while starting the server 

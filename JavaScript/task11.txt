@@ -1,0 +1,69 @@
+Answer 1 : 
+
+	we can use Object.values(obj)
+	
+	const obj = {
+	  name : "Jos",
+	  age : 28,
+	  city : "Surrey",
+	  country : "UK" 
+	}
+
+	const temp = Object.values(obj)
+	console.log(temp)
+
+	for (let i = 0 ; i <= temp.length - 1 ; i++ ){
+	  console.log(temp[i])
+	}
+	
+	
+Answer 2 :
+	
+	NaN means "Not a Number" in Javascript. It is a special value that represents the result of an operation that doesn't produce a meaningful numeric value.
+	Trying to convert a non-numeric character into a number using "+" will return NaN
+	
+	console.log(+"/")
+	
+	
+Answer 3 :
+
+	These are the ways how values are passed as args inside a function and how are they manipulated inside the those functions
+	
+	i. Pass by Value - 
+	* copy of the actual value is passed to the function. Changes made to the parameter inside the function do not affect the original value
+	* passing primitive data types like numbers, strings and booleans
+	
+	function  change(x){
+		x = 5
+		console.log(5)
+		}
+	let y = 10
+	change(y)
+	console.log(num) // will output 10 the original value
+	
+	ii. Pass by Reference -
+	
+	* reference to the actual value in memory is passed to the function 
+	changes made to the parameter inside the function affect the original value
+	* objects , arrays and functions are some examples
+	
+	const arr = [1,2,3,4]
+	
+	function arrpush(arr){
+		arr.push(5)
+		}
+	console.log(arr) // will output [1,2,3,4,5]
+		
+	
+	
+Answer 8 :
+	
+	break is used to skip the lines ahead in the current iteration and also skip the further iterations in a loop
+	
+	continue is used to skip the further lines in the current iteration and proceed to the next iteration
+	
+Answer 9 :
+
+	i. 
+	
+
