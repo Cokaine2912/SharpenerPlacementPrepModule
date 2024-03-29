@@ -1,0 +1,64 @@
+Answer 1 : JOINS are used to combine two or more more table based on some related common column between the tables
+
+
+    Left Join - Returns all the data from the left table even if there are no matches in the right table 
+    Right Join - Returns all the data from the right table even if there are no matches in the left table
+    Inner Join - Returns only those rows where there are matches in both the tables
+    Full Outer Join - Returns rows where there is match in one of the tables 
+
+
+Answer 2 :
+
+SELECT orders.order_id, customers.customer_name, orders.order_date
+
+FROM orders
+
+INNER JOIN customers ON orders.customer_id = customers.customer_id;
+
+
+Answer 3 : 
+
+    PRIMARY KEY - unique value and unique identifier of the row.
+	
+    FOREIGN KEY - to establish a connection between two tables by referencing the primary key of one table into another table
+	
+    UNIQUE - this is to restrict repetition of values in a particular column
+	
+    CHECK - to allow only that insertion which follows a desired condition 
+	
+    NOT NULL - while insertion this parameter or column should be always be specified and could not be empty
+	
+Answer 4 : 
+
+	UNIQUE constraint to a column means that no duplicate values are allowed and all the values should be different from each other
+	
+Answer 5 : 
+	
+	PRIMARY key serves as a uinique identifier of a row in the table
+	
+	FOREIGN key serves as a reference to the to a row from another table
+	
+	Suppose we have two tables Customers and Orders
+	
+	Customers :
+			id - PRIMARY key to uniquely identify a customer
+			name -
+			address - 
+			mobile - 
+			email - 
+	Orders : 
+			id - PRIMARY key to uniquely identify an order 
+			product - 
+			quantity - 
+			customer_id - FOREIGN key this refers to a customer in the Customers table to whom the order belongs
+			
+Answer 6 : 
+	
+	PRIMARY and UNIQUE constraints both ensure uniqueness but the primary key typically serves as the main identifier
+	PRIMARY key is only one in whole table but UNIQUE constraint can be applied to multiple columns in the table 
+	PRIMARY key of one table serves as a FOREIGN key in the anoter but not any column with UNIQUE constraint
+	
+	
+
+
+
